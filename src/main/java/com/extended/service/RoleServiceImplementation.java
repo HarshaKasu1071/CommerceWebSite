@@ -1,6 +1,5 @@
 package com.extended.service;
 
-import java.util.InputMismatchException;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,8 +43,8 @@ public class RoleServiceImplementation implements RoleService {
 				finalResponse.setStatusCode("200");
 				finalResponse.setMessage("One Record Is Inserted");
 				return finalResponse;
-			} catch (InputMismatchException ex) {
-				logger.error("InputMismatchException::input::role");
+			} catch (Exception ex) {
+				logger.error("Exception::input::role");
 
 			}
 
@@ -82,8 +81,8 @@ public class RoleServiceImplementation implements RoleService {
 
 			try {
 				roleRepository.InsertingMultipleRoleRecord(role);
-			} catch (InputMismatchException e) {
-				logger.error("InputMismatchException:: input:: role:" + e.getMessage());
+			} catch (Exception e) {
+				logger.error("Exception:: input:: role:" + e.getMessage());
 			}
 			if (role != null) {
 				finalResponse.status = HttpStatus.OK;
@@ -108,8 +107,8 @@ public class RoleServiceImplementation implements RoleService {
 		try {
 
 			role = roleRepository.GetOneRoleRecord(roleId);
-		} catch (InputMismatchException e) {
-			logger.error("InputMismatchException:: input:: role:" + e.getMessage());
+		} catch (Exception e) {
+			logger.error("Exception:: input:: role:" + e.getMessage());
 		}
 		if (role != null) {
 			finalResponse.status = HttpStatus.OK;
@@ -136,8 +135,8 @@ public class RoleServiceImplementation implements RoleService {
 		List<Role> role = null;
 		try {
 			role = roleRepository.GetAllRoleRecords();
-		} catch (InputMismatchException e) {
-			logger.error("InputMismatchException:: input:: role:" + e.getMessage());
+		} catch (Exception e) {
+			logger.error("Exception:: input:: role:" + e.getMessage());
 		}
 
 		if (role != null) {
@@ -163,8 +162,8 @@ public class RoleServiceImplementation implements RoleService {
 		FinalResponse finalResponse = new FinalResponse();
 		try {
 			roleRepository.DeleteingRoleRecord(roleId);
-		} catch (InputMismatchException e) {
-			logger.error("InputMismatchException:: input:: role:" + e.getMessage());
+		} catch (Exception e) {
+			logger.error("Exception:: input:: role:" + e.getMessage());
 		}
 		if (roleId > 0) {
 			finalResponse.status = HttpStatus.OK;
@@ -189,8 +188,8 @@ public class RoleServiceImplementation implements RoleService {
 		try {
 
 			roleRepository.UpadatingRoleRecord(role);
-		} catch (InputMismatchException e) {
-			logger.error("InputMismatchException:: input:: role:" + e.getMessage());
+		} catch (Exception e) {
+			logger.error("Exception:: input:: role:" + e.getMessage());
 		}
 		if (role != null) {
 			finalResponse.status = HttpStatus.OK;
