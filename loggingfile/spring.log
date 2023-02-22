@@ -50,3 +50,36 @@
 2023-02-22T14:52:55.543+05:30  INFO 22424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2023-02-22T14:52:55.549+05:30  INFO 22424 --- [restartedMain] com.extended.AdminMockitoApplication     : Started AdminMockitoApplication in 0.589 seconds (process running for 680.72)
 2023-02-22T14:52:55.551+05:30  INFO 22424 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-22T15:01:08.646+05:30  INFO 22424 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-22T15:01:09.162+05:30  INFO 22424 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-22T15:01:09.261+05:30  INFO 22424 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22T15:01:09.271+05:30  INFO 22424 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-02-22T15:01:09.298+05:30  INFO 22424 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-02-22T15:01:09.418+05:30  INFO 22424 --- [restartedMain] c.e.service.RoleServiceImplementation    : hai
+2023-02-22T15:01:09.418+05:30  INFO 22424 --- [restartedMain] c.e.service.RoleServiceImplementation    : li:
+2023-02-22T15:01:09.509+05:30  INFO 22424 --- [restartedMain] com.extended.AdminMockitoApplication     : Starting AdminMockitoApplication using Java 17.0.5 with PID 22424 (C:\Users\lilly\eclipse-extended-workspace\admin_mockito\target\classes started by lilly in C:\Users\lilly\eclipse-extended-workspace\admin_mockito)
+2023-02-22T15:01:09.510+05:30  INFO 22424 --- [restartedMain] com.extended.AdminMockitoApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-02-22T15:01:09.715+05:30  INFO 22424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22T15:01:09.719+05:30  INFO 22424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2023-02-22T15:01:09.871+05:30  INFO 22424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-02-22T15:01:09.872+05:30  INFO 22424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-22T15:01:09.872+05:30  INFO 22424 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-22T15:01:09.914+05:30  INFO 22424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-22T15:01:09.914+05:30  INFO 22424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 401 ms
+2023-02-22T15:01:09.972+05:30  INFO 22424 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-22T15:01:09.981+05:30  WARN 22424 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-22T15:01:09.988+05:30  INFO 22424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-02-22T15:01:10.033+05:30  INFO 22424 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49437026
+2023-02-22T15:01:10.033+05:30  INFO 22424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-02-22T15:01:10.034+05:30  INFO 22424 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-22T15:01:10.045+05:30  INFO 22424 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-22T15:01:10.046+05:30  INFO 22424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22T15:01:10.124+05:30  WARN 22424 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22T15:01:10.232+05:30  INFO 22424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-22T15:01:10.246+05:30  INFO 22424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-02-22T15:01:10.251+05:30  INFO 22424 --- [restartedMain] com.extended.AdminMockitoApplication     : Started AdminMockitoApplication in 0.82 seconds (process running for 1175.423)
+2023-02-22T15:01:10.254+05:30  INFO 22424 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-22T15:14:50.357+05:30  WARN 22424 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m40s57ms263µs800ns).
+2023-02-22T15:45:37.930+05:30  WARN 22424 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=46s566ms9µs800ns).
+2023-02-22T16:41:20.390+05:30  WARN 22424 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=50m12s368ms134µs800ns).
+2023-02-22T16:53:19.919+05:30  WARN 22424 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=59s352ms333µs100ns).

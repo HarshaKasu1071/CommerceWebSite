@@ -2,11 +2,15 @@ package com.extended.repositoryimpl;
 
 import java.util.Date;
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.extended.bean.Role;
 import com.extended.rolerepository.RoleRepository;
+import com.extended.service.RoleServiceImplementation;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
@@ -14,13 +18,14 @@ import jakarta.transaction.Transactional;
 
 @Repository
 public class RepositoryImpl implements RoleRepository {
+	private static final Logger logger = LoggerFactory.getLogger(RoleServiceImplementation.class);
 	@Autowired
 	private EntityManager entityManager;
 
-	
 	@Transactional
 	@Override
 	public String InsertingOneRoleRecord(Role role) {
+		logger.info("InsertingOneRoleRecord:: start " + role);
 		Date date = new Date();
 		Query query = entityManager.createNativeQuery("insert into Role values(?,?,?,?,?)");
 		query.setParameter(1, role.getRoleId());
@@ -34,7 +39,6 @@ public class RepositoryImpl implements RoleRepository {
 
 		return "one record is inserted";
 	}
-	
 
 	@Override
 	public Object[] GetOneRoleRecord(int roleId) {
@@ -54,7 +58,6 @@ public class RepositoryImpl implements RoleRepository {
 		return role;
 	}
 
-	
 	@Override
 	@Transactional
 	public String DeleteingRoleRecord(int id) {
