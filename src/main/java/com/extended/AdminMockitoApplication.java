@@ -13,6 +13,7 @@ public class AdminMockitoApplication {
 
 	public static void main(String[] args) {
 		logger.info("hai");
+		logger.info("li:");
 		SpringApplication.run(AdminMockitoApplication.class, args);
 	}
 
